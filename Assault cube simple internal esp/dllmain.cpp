@@ -58,7 +58,7 @@ void DrawBox(Vec2 Head, Vec2 Pos, HDC hdc) {
     DrawLine(Vec2{ Pos.x + Height, Pos.y }, Vec2{ Pos.x - Height, Pos.y }, hdc);
 }
 
-void _stdcall MainThread(HMODULE hModule) {
+void MainThread(HMODULE hModule) {
 #ifdef _DEBUG
     AllocConsole();
     SetConsoleTitle("Debug Window");
